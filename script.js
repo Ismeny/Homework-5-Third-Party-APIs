@@ -30,4 +30,11 @@ function userInput(){
    return;
 }
 
-textAreaEl.attr("id");
+
+function storedInput() {
+    textAreaEl.textContent = localStorage.getItem("9am");
+    console.log("init")
+    console.log(textAreaEl)
+}
+
+  storedInput();
