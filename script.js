@@ -12,18 +12,19 @@
 //WHEN I refresh the page
 //THEN the saved events persist
 
-//3- moment js- copy from activities
+// sets current date 
 var currentDay = moment().format("dddd MMM Do, YYYY");
 $("#currentDay").text(currentDay);
 console.log(currentDay);
 
+// text area input
 var textAreaEl = $("textarea");
 
-//creates function to save text 
+//save text when button is clicked
 var saveBtn = $(".saveBtn");
 saveBtn.on("click", userInput);
 
-//grabbing id values from html
+// function stores text input value in local storage
 function userInput() {
     var input = $(this).siblings("textarea").val();
     console.log(input);
@@ -32,7 +33,7 @@ function userInput() {
     return;
 }
 
-
+// returns text input value on page after being saved and refreshed 
 function storedInput() {
     var time1 = localStorage.getItem("9am");
     $("#9am").text(time1)
@@ -56,6 +57,7 @@ function storedInput() {
 }
 storedInput();
 
+// runs function that sets color based on current time of the day
 function colorCode() {
     moment().hour();
     console.log(moment().hour());
