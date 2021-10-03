@@ -65,14 +65,15 @@ function colorCode() {
         console.log("okay");
         $(this).attr("attr");
         if (moment().hour() == $(this).attr("attr")) {
-            $("textarea").addClass("present");
-        }else if (moment().hour() < $(this).attr("attr")) {
-                $("textarea").addClass("future");
-        }else {
-            $("textarea").addClass("past");
+            $(this).addClass("present");
+        } if (moment().hour() < $(this).attr("attr")) {
+                $(this).addClass("future");
+        }        
+        if (moment().hour() > $(this).attr("attr")) {
+            $(this).addClass("past");
         }
-    });
 
-            
-}
+        })
+    }      
+
 colorCode();
