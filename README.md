@@ -1,4 +1,4 @@
-# Homework-5-Third-Party-APIs
+# Third-Party-APIs
 
 ## Description
 This project is a work day planner for regular business hours. You are able to type what you have planned for each hour. There is special color coding to effectively display the past, present, and future hours and what you have planned. This project uses local storage to keep the input placed in the time blocks. 
@@ -13,7 +13,7 @@ This project is a work day planner for regular business hours. You are able to t
 * Test
 
 ## Installation
-Go to URL : ***https://ismeny.github.io/Homework-5-Third-Party-APIs/***
+Go to URL : ***https://ismeny.github.io/Third-Party-APIs/***
 
 ![ScreenShot](screenshot.png)
 
